@@ -1,4 +1,4 @@
-# Hi, I’m GPC Thushani,
+# Hi, I’m GPC Thushani
 
 Welcome to my GitHub portfolio! I am a **BSc Hons Information Systems** student at **Sabaragamuwa University of Sri Lanka**.  
 
