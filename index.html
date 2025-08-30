@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav>
-    <div class="logo">Your<span>Name</span></div>
+    <div class="logo">GPC <span>THUSHANI</span></div>
     <ul>
       <li><a href="#home"><i class="fa fa-house"></i> Home</a></li>
       <li><a href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
@@ -18,7 +18,7 @@
       <li><a href="#skills"><i class="fa fa-code"></i> Skills</a></li>
       <li><a href="#projects"><i class="fa fa-diagram-project"></i> Projects</a></li>
       <li><a href="#achievements"><i class="fa fa-trophy"></i> Achievements</a></li>
-      <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+      <li><a href="#contact"><i class="fa fa-envelope"></i> Contact Me</a></li>
     </ul>
   </nav>
 
@@ -31,24 +31,40 @@
       <div class="bubble-layer extra"></div>
     </div>
     <img src="yourphoto.jpg" alt="My Photo" class="profile-pic">
-    <h1>Your <span>Name</span></h1>
+    <h1>Charitha <span>Thushani</span></h1>
     <h3>Undergraduate</h3>
     <p>BSc. Hons in Information Systems, Sabaragamuwa University of Sri Lanka</p>
     <div class="buttons">
       <a href="#" class="btn">Contact Me</a>
       <a href="#" class="btn">Download CV</a>
     </div>
-    <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae libero sit amet risus hendrerit luctus.</p>
+    <p class="about">Dedicated to continuous growth and innovation, I combine creativity with technical skills to bring ideas to life.</p>
   </section>
 
   <!-- Education Section -->
   <h2><i class="fa fa-graduation-cap"></i> Education</h2>
   <section id="education" class="section-box bubble-section">
     <div class="bubble-container"></div>
-    <div class="card">University Details</div>
-    <div class="card">First School</div>
-    <div class="card">Second School</div>
-    <div class="card">Diploma</div>
+    <div class="card">
+      Sabaragamuwa University of Sri Lanka <br>
+      Bsc. Hons in Information Systems <br>
+      <i class="far fa-calendar-check"></i> July 2024 - Present
+      <p>Gaining expertise in software engineering, systems analysis, databases, and security—
+        while also building key analytical, project management, and ethical leadership skills.</p>
+    </div>
+    <div class="card">
+      VTI Sri Lanka <br>
+      Diploma in English<br>
+      <i class="far fa-calendar-check"></i> 2023 Feb - 2024 Feb
+      <p>Strengthened skills in reading, writing, listening, and speaking, with emphasis on grammar, vocabulary, 
+        and effective communication for academic, professional, and everyday contexts.</p>
+    </div>
+    <div class="card">
+      Agamethi Balika Maha Vidyalaya, Panadura<br>
+      GCE Advanced Level - Mathematics Stream<br>
+      <i class="far fa-calendar-check"></i> 2020 - 2022
+      <p>Studied Mathematics, Physics and ICT with leadership experience as School Senior Prefect.</p>
+    </div>
   </section>
 
   <!-- Experience Section -->
@@ -56,9 +72,14 @@
   <section id="experience" class="section-box bubble-section">
     <div class="bubble-container"></div>
     <ul>
-      <li>Internship at Company ABC</li>
-      <li>Project work on XYZ</li>
-      <li>Volunteer experience</li>
+      <div class="card">
+        <h3>Internship - People's Bank</h3>
+            <p><i class="far fa-calendar-check"></i> 2023 Oct - 2024 May</p>
+            <p>Worked as an intern gaining hands-on experience in banking operations, mail tracking system, customer service, and financial systems.</p>
+      </div><p> </p>
+      <div class="card">
+        <h3>Volunteer experience</h3>
+      </div>
     </ul>
   </section>
 
@@ -66,17 +87,45 @@
   <h2><i class="fa fa-code"></i> Skills</h2>
   <section id="skills" class="section-box bubble-section">
     <div class="bubble-container"></div>
-    <div class="skill-card">Programming Languages</div>
-    <div class="skill-card">Frameworks & Libraries</div>
-    <div class="skill-card">Databases</div>
-    <div class="skill-card">Other Tools</div>
+    <div class="skill-card">
+      <dl>
+        <dd>Programming Languages</dd>
+          <dt>C</dt>
+          <dt>Java</dt>
+          <dt>JavaScript</dt>
+          <dt>PHP</dt>
+          <dt>Python</dt>
+      </dl>
+    </div>
+    <div class="skill-card">
+      <dl>
+        <dd>Frameworks & Libraries</dd>
+          <dt>React</dt>
+          <dt>Node.js</dt>
+      </dl>
+    </div>
+    <div class="skill-card">
+      <dl>
+        <dd>Databases</dd>
+          <dt>MySQL</dt>
+          <dt>MongoDB</dt>
+      </dl>
+    </div>
+    <div class="skill-card">
+      <dl>
+        <dd>Other Tools</dd>
+          <dt>Git / GitHub</dt>
+          <dt>Figma</dt>
+          <dt>Canva</dt>
+      </dl>
+    </div>
   </section>
 
   <!-- Projects Section -->
   <h2><i class="fa fa-diagram-project"></i> Projects</h2>
   <section id="projects" class="section-box row-box bubble-section">
     <div class="bubble-container"></div>
-    <div class="card">Project 1</div>
+    <div class="card">Hotel Website</div>
     <div class="card">Project 2</div>
     <div class="card">Project 3</div>
   </section>
@@ -92,11 +141,11 @@
   <!-- Footer -->
   <footer id="contact">
     <div class="socials">
-      <a href="#"><i class="fa-brands fa-github"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:youremail@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="https://github.com/GPCThushani"><i class="fa-brands fa-github"></i></a>
+      <a href="www.linkedin.com/in/charitha-thushani-684111335"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:charithathushani2003@gmail.com"><i class="fa fa-envelope"></i></a>
     </div>
-    <p>Created by You | All Rights Reserved</p>
+    <p>Created by G.P.C.Thushani | All Rights Reserved</p>
   </footer>
 
   <!-- Bottom fixed bar -->
