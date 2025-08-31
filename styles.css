@@ -1,4 +1,3 @@
-/* ---------------------- Reset ---------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -126,7 +125,6 @@ h2 {
   text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
-
 .home h3 {
   font-size: 18px;
   margin-bottom: 5px;
@@ -238,8 +236,8 @@ h2 {
 }
 
 .skill-card {
-  background: #fff4e6;
-  border-left: 5px solid #ff922b;
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.2), rgba(200, 200, 200, 0.1));
+  border: 1px solid #e1bee7;
   padding: 20px;
   border-radius: 6px;
   flex: 1 1 200px;
@@ -283,6 +281,46 @@ h2 {
 
 .icon-green {
   background: linear-gradient(135deg, #84fab0, #8fd3f4);
+}
+
+/* Education + Experience cards: soft blue → soft purple */
+#education .card,
+#experience .card {
+  background: linear-gradient(135deg, rgba(179, 224, 252, 0.2), rgba(200, 179, 255, 0.2));
+}
+
+/* Projects + Achievements cards: soft blue → soft purple → soft pink */
+#projects .card,
+#achievements .card {
+  background: linear-gradient(135deg, rgba(163, 212, 247, 0.2), rgba(191, 164, 217, 0.2), rgba(248, 199, 217, 0.2));
+}
+
+/* ---------------------- Experience Section ---------------------- */
+#experience .card {
+  background: #ececec; 
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px; 
+  flex: 1 1 100%;
+  box-shadow: 0 4px 12px rgba(127, 238, 142, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#experience .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+#experience h3 {
+  font-size: 18px;
+  color: rgb(49, 20, 212); 
+  margin-bottom: 8px;
+}
+
+#experience p {
+  font-size: 14px;
+  color: #333333;
+  margin: 5px 0;
 }
 
 /* ---------------------- Footer ---------------------- */
@@ -373,7 +411,7 @@ footer p {
   border-radius: 50%;
   opacity: 0.25;
   animation: float 10s linear infinite, scaleBubble 6s ease-in-out infinite alternate;
-  background: rgba(138,121,255,0.6); /* purple-blue mix */
+  background: rgba(138,121,255,0.6); 
 }
 
 @keyframes float {
@@ -387,3 +425,5 @@ footer p {
   50% { transform: scale(1.1); }
   100% { transform: scale(0.8); }
 }
+
+
