@@ -122,11 +122,10 @@ h2 {
 .home h1 {
   font-size: 36px;
   margin: 15px 0 5px;
-  color: #ffffff;
+  color: #4411bb;
   text-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
-.home h1 span { color: #dcb3ff; }
 
 .home h3 {
   font-size: 18px;
@@ -228,7 +227,7 @@ h2 {
   padding: 20px;
   border-radius: 6px;
   flex: 1 1 200px;
-  text-align: center;
+  text-align: left;
   transition: all 0.3s ease;
 }
 
@@ -251,6 +250,39 @@ h2 {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+#skills dt {
+  margin-bottom: 8px;  
+}
+
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.icon-blue {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.icon-purple {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+}
+
+.icon-orange {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.icon-green {
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
 }
 
 /* ---------------------- Footer ---------------------- */
