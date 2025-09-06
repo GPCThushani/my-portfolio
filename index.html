@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charitha Thushani | Portfolio</title>
   <link rel="stylesheet" href="style1.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <div class="logo">GPC <span>THUSHANI</span></div>
-    <ul>
+  <nav id="navbar">
+    <div class="logo">GPC THUSHANI</div>
+    <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+    <ul id="nav-links">
       <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
       <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
       <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
@@ -22,138 +27,167 @@
     </ul>
   </nav>
 
-  <!-- Home Section with Bubbles -->
-  <section id="home" class="home">
-    <div id="bubbles">
-      <div class="bubble-layer small"></div>
-      <div class="bubble-layer medium"></div>
-      <div class="bubble-layer large"></div>
-      <div class="bubble-layer extra"></div>
-    </div>
+  <!-- Animated Background -->
+  <div class="gradient-background">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-overlay"></div>
+    <div class="particles-container"></div>
+  </div>
+
+  <!-- Home -->
+  <section id="home" class="home reveal">
     <img src="C:\Users\DELL\OneDrive\Pictures\Camera Roll\Profile .jpg" alt="My Photo" class="profile-pic">
     <h1>Charitha Thushani</h1>
     <h3>Undergraduate</h3>
     <p>BSc. Hons in Information Systems, Sabaragamuwa University of Sri Lanka</p>
-    <p class="about">Dedicated to continuous growth and innovation;  Combine creativity with technical skills to bring ideas to life.</p>
+    <p class="about">Dedicated to continuous growth and innovation; Combining creativity with technical skills to bring ideas to life.</p>
     <div class="buttons">
-      <a href="#" class="btn">Contact Me</a>
+      <a href="#contact" class="btn">Contact Me</a>
       <a href="#" class="btn">Download CV</a>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-  <section id="education" class="section-box bubble-section">
-    <div class="bubble-container"></div>
-    <div class="card">
-      <p style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><i class='fas fa-circle' style='color:rgb(143,25,163); font-size:16px;'></i> Sabaragamuwa University of Sri Lanka</p><br>
-      <p>Bsc. Hons in Information Systems <br>
-      <i class="far fa-calendar-check"></i> July 2024 - Present</p><br>
-      <p>Gaining expertise in software engineering, systems analysis, databases, and security— while also building key analytical, project management, and ethical leadership skills.</p>
-    </div>
-    <div class="card">
-      <p style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><i class='fas fa-circle' style='color:rgb(143,25,163); font-size:16px;'></i> VTI Sri Lanka </p><br>
-      <p>Diploma in English<br>
-      <i class="far fa-calendar-check"></i> 2023 Feb - 2024 Feb</p><br>
-      <p>Strengthened skills in reading, writing, listening, and speaking, with emphasis on grammar, vocabulary, and effective communication for academic, professional, and everyday contexts.</p>
-    </div>
-    <div class="card">
-      <p style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><i class='fas fa-circle' style='color:rgb(143,25,163); font-size:16px;'></i> Agamethi Balika Maha Vidyalaya, Panadura</p><br>
-      <p>GCE Advanced Level - Mathematics Stream<br>
-      <i class="far fa-calendar-check"></i> 2020 - 2022</p><br>
-      <p>Studied Mathematics, Physics and ICT with leadership experience as School Senior Prefect.</p>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <h2><i class="fas fa-briefcase"></i> Experience</h2>
-  <section id="experience" class="section-box bubble-section">
-    <div class="bubble-container"></div>
+  <!-- Education -->
+  <section id="education" class="section reveal">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div class="section-box">
       <div class="card">
-        <h3>Internship - Regional Head Office, People's Bank</h3><br>
-            <p><i class="far fa-calendar-check"></i> 2023 Oct - 2024 May</p>
-            <p>Worked as an intern gaining hands-on experience in banking operations, mail tracking system, customer service, and financial systems.</p>
+        <h3><i class='fas fa-circle' style='color:#e39c0d; font-size:16px;'></i> Sabaragamuwa University of Sri Lanka</h3>
+        <p><i class="far fa-calendar-check"></i> July 2024 - Present</p>
+        <p>Gaining expertise in software engineering, systems analysis, databases, and security while building key leadership and project management skills.</p>
       </div>
       <div class="card">
-        <h3>Volunteer experience</h3>
+        <h3><i class='fas fa-circle' style='color:#e39c0d; font-size:16px;'></i> VTI Sri Lanka</h3><br>
+        <p><i class="far fa-calendar-check"></i> Feb 2023 - Feb 2024</p>
+        <p>Strengthened reading, writing, listening, and speaking skills in English with a focus on academic and professional contexts.</p>
       </div>
-  </section>
-
-  <!-- Skills Section -->
-  <h2><i class="fa fa-code"></i> Skills</h2>
-  <section id="skills" class="section-box bubble-section">
-    <div class="bubble-container"></div>
-    <div class="skill-card">
-      <dl>
-        <dd style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><span class="skill-icon icon-purple"><i class="fa fa-code"></i></span><br>Programming Languages<br><br></dd>
-          <dt><i class="far fa-check-circle"></i> C</dt>
-          <dt><i class="far fa-check-circle"></i> Java</dt>
-          <dt><i class="far fa-check-circle"></i> JavaScript</dt>
-          <dt><i class="far fa-check-circle"></i> PHP</dt>
-          <dt><i class="far fa-check-circle"></i> Python</dt>
-      </dl>
-    </div>
-    <div class="skill-card">
-      <dl>
-        <dd style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><span class="skill-icon icon-blue"><i class="fas fa-code-branch"></i></span><br>Frameworks & Libraries<br><br></dd>
-          <dt><i class="far fa-check-circle"></i> React</dt>
-          <dt><i class="far fa-check-circle"></i> Node.js</dt>
-      </dl>
-    </div>
-    <div class="skill-card">
-      <dl>
-        <dd style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><span class="skill-icon icon-green"><i class="fas fa-database"></i></span><br>Databases<br><br></dd>
-          <dt><i class="far fa-check-circle"></i> MySQL</dt>
-          <dt><i class="far fa-check-circle"></i> MongoDB</dt>
-      </dl>
-    </div>
-    <div class="skill-card">
-      <dl>
-        <dd style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold;"><span class="skill-icon icon-orange"><i class="fa fa-cog"></i></span><br>Other Tools<br><br></dd>
-          <dt><i class="far fa-check-circle"></i> Git / GitHub</dt>
-          <dt><i class="far fa-check-circle"></i> Figma</dt>
-          <dt><i class="far fa-check-circle"></i> Canva</dt>
-          <dt><i class="far fa-check-circle"></i> VS Code</dt>
-          <dt><i class="far fa-check-circle"></i> IntelliJ IDEA</dt>
-      </dl>
+      <div class="card">
+        <h3><i class='fas fa-circle' style='color:#e39c0d; font-size:16px;'></i> Agamethi Balika Maha Vidyalaya, Panadura</h3>
+        <p><i class="far fa-calendar-check"></i> 2020 - 2022</p>
+        <p>Studied Mathematics, Physics, and ICT with leadership experience as Senior Prefect.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <h2><i class="fa fa-diagram-project"></i> Projects</h2>
-  <section id="projects" class="section-box row-box bubble-section">
-    <div class="bubble-container"></div>
-    <div class="card"><p style="color: rgb(49, 20, 212); font-size: 18px; font-weight: bold">Hotel Website </p><br>
-      <p>A dynamic hotel website with multiple modules, including accommodation listings, dining and spa reservations, wedding and event booking, 
-        user authentication (login/signup), order tracking, and promotional offers. 
-      </p><br>
-      <i class="fab fa-github"></i><a href="https://github.com/GPCThushani/first-website-project" target="_blank" class="github-link"> View on GitHub
-      </a>
+  <!-- Experience -->
+  <section id="experience" class="section reveal">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+    <div class="section-box">
+      <div class="card">
+        <h3>Internship - People's Bank</h3>
+        <p><i class="far fa-calendar-check"></i> Oct 2023 - May 2024</p>
+        <p>Worked on banking operations, mail tracking systems, customer service, and documentation tasks using MS Word, Excel, and PowerPoint.</p>
+      </div>
+      <div class="card">
+        <h3>Volunteer Experience</h3>
+        <p>Contributed to community events, university activities, and collaborative tech projects.</p>
+      </div>
     </div>
-    <div class="card">Project 2</div>
-    <div class="card">Project 3</div>
   </section>
 
-  <!-- Achievements Section -->
-  <h2><i class="fa fa-trophy"></i> Achievements</h2>
-  <section id="achievements" class="section-box row-box bubble-section">
-    <div class="bubble-container"></div>
-    <div class="card">Achievement 1</div>
-    <div class="card">Achievement 2</div>
+  <!-- Skills -->
+  <section id="reveal" class="section reveal">
+    <h2><i class="fa fa-code"></i> Skills</h2>
+    <div class="section-box">
+      <div class="skill-card">
+        <h3><i class="fa fa-laptop-code skill-icon"></i> Programming Languages</h3>
+        <ul>
+          <li><i class="far fa-check-circle"></i> C</li>
+          <li><i class="far fa-check-circle"></i> Java</li>
+          <li><i class="far fa-check-circle"></i> JavaScript</li>
+          <li><i class="far fa-check-circle"></i> PHP</li>
+          <li><i class="far fa-check-circle"></i> Python</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3><i class="fas fa-code-branch skill-icon"></i> Frameworks & Libraries</h3>
+        <ul>
+          <li><i class="far fa-check-circle"></i> React</li>
+          <li><i class="far fa-check-circle"></i> Node.js</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3><i class="fas fa-database skill-icon"></i> Databases</h3>
+        <ul>
+          <li><i class="far fa-check-circle"></i> MySQL</li>
+          <li><i class="far fa-check-circle"></i> MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3><i class="fa fa-cog skill-icon"></i> Tools</h3>
+        <ul>
+          <li><i class="far fa-check-circle"></i> Git / GitHub</li>
+          <li><i class="far fa-check-circle"></i> Figma</li>
+          <li><i class="far fa-check-circle"></i> Canva</li>
+          <li><i class="far fa-check-circle"></i> VS Code</li>
+          <li><i class="far fa-check-circle"></i> IntelliJ IDEA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2><i class="fa fa-diagram-project"></i> Projects</h2>
+    <div class="section-box">
+      <div class="card">
+        <h3>Hotel Website</h3>
+        <p>A dynamic platform that allows users to browse rooms, make reservations, book events, and view special offers. 
+          It includes user authentication for secure bookings and an admin panel to manage reservations and events efficiently.</p><br>
+           Programming Languages and Frameworks:<li>JavaScript, CSS, Node.js, MongoDB</li>
+        <a href="https://github.com/GPCThushani/first-website-project" target="_blank" class="github-link"><br>
+          <i class="fab fa-github"></i>  View on GitHub
+        </a>
+      </div>
+      <div class="card"><h3>Habit Tracker App</h3><p>Allows users to create and track daily habits, mark them as completed, and view progress through charts. 
+        It includes reminders to help users stay consistent and motivated in building positive routines.<br><br>Programming Languages and Frameworks:
+      <li>React.js, CSS, Node.js, Express.js, MongoDB, Chart.js</li><br>Coming soon...</p></div>
+      <div class="card"><h3>Personal Finance Manager App</h3><p>Helps users track their income, expenses, and savings. Users can categorize transactions, 
+        set monthly budgets, and view visual reports to manage finances effectively.</p><br>Programming Languages and Frameworks:<li>React Native, Node.js, Hive, MongoDB</li><br>Coming soon...</div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section reveal">
+    <h2><i class="fa fa-trophy"></i> Achievements</h2>
+    <div class="section-box">
+      <div class="card">
+        <h3>HackerRank Achievements</h3>
+        <ul>
+          <strong>Hackos:</strong> 396
+          <li>🏅 10 Days of Statistics - <span style="color:#FFD700;">Gold Badge</span></li>
+          <li>🏅 30 Days of Code (C) - <span style="color:#FFD700;">Gold Badge</span></li>
+          <li>🏅 C++ Programming - <span style="color:#C0C0C0;">Silver Badge</span></li>
+          <li>🏅 C Programming - <span style="color:#CD7F32;">Bronze Badge</span></li>
+        </ul>
+        <div class="social-links"><img src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png" alt="HackerRank" class="hackerrank-icon">
+          <br><a href="https://www.hackerrank.com/profile/C_Thushani" target="_blank">View my profile</a>  
+        </div></div>
+
+      <!-- AI Certification Card -->
+      <div class="card">
+        <h3>HP LIFE Certification</h3>
+        <p><strong>AI for Beginners</strong></p>
+        <p>Gained understanding of AI concepts, data importance, business use cases, and ethical considerations.</p>
+        <p><strong>Date:</strong> May 23, 2025</p>
+        <p><strong>Certificate ID:</strong> 2e01258c-1bd8-4820-b3ce-a7bdfbe168c7</p>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer id="contact">
     <div class="socials">
-      <a href="https://github.com/GPCThushani"><i class="fa-brands fa-github"></i></a>
-      <a href="www.linkedin.com/in/charitha-thushani-684111335"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/GPCThushani"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/charitha-thushani-684111335"><i class="fab fa-linkedin"></i></a>
       <a href="mailto:charithathushani2003@gmail.com"><i class="fa fa-envelope"></i></a>
     </div>
-    <p>Created by G.P.C.Thushani | &copy; All Rights Reserved</p>
+    <p>Created by G.P.C. Thushani | &copy; All Rights Reserved</p>
   </footer>
 
-  <!-- Bottom fixed bar -->
-  <div class="bottom-bar"></div>
   <script src="script1.js"></script>
 </body>
 </html>
