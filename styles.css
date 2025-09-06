@@ -178,8 +178,8 @@ h3 {
 }
 
 .profile-pic { 
-  width:650px; 
-  height:650px; 
+  width:200px; 
+  height:200px; 
   border-radius:50%; 
   border:4px solid #00E5FF; 
   box-shadow:0 0 30px rgba(0,229,255,0.4); 
